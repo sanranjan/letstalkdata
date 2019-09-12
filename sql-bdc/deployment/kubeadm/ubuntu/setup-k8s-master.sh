@@ -12,3 +12,4 @@ helm init
 kubectl apply -f rbac.yaml
 kubectl apply -f kubernetes-dashboard.yaml
 kubectl create clusterrolebinding kubernetes-dashboard --clusterrole=cluster-admin --serviceaccount=kube-system:kubernetes-dashboard
+kubeadm token create --print-join-command
